@@ -3,6 +3,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { ReactQueryClientProvider } from "@/components/react-query-client-provider";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
+import ConfigureAmplifyClientSide from "@/components/ConfigureAmplify";
 
 export const metadata: Metadata = {
   title: "Personalized AI",
@@ -17,6 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body>
+        <ConfigureAmplifyClientSide />
         <ReactQueryClientProvider>
           <ThemeProvider
             attribute="class"

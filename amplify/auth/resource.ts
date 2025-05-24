@@ -9,5 +9,16 @@ export const auth = defineAuth({
     email: {
       verificationEmailSubject: "Welcome! Verify your email!",
     },
+    externalProviders: {
+      // ...
+      callbackUrls: [
+        "http://localhost:3000/login",
+        "https://mywebsite.com/login",
+      ],
+      logoutUrls: [
+        "http://localhost:3000/logout",
+        "https://mywebsite.com/logout",
+      ],
+    },
   },
 });
