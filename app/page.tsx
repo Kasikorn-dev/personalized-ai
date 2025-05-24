@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ModeToggle } from "@/components/custom-ui/toggle-theme-button";
+import { ModeToggle } from "@/components/custom-ui/theme-toggle-button";
 import React from "react";
 
 const page = () => {
