@@ -4,7 +4,7 @@ import React from "react";
 import { AuthGetCurrentUserServer, cookiesClient } from "@/utils/amplify-utils";
 import { revalidatePath } from "next/cache";
 import Logout from "@/component-pages/Logout";
-import { useQuery } from "@tanstack/react-query";
+// import { useQuery } from "@tanstack/react-query";
 
 async function page() {
   // useQuery({
